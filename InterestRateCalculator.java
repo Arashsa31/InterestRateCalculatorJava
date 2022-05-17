@@ -98,7 +98,7 @@ public class InterestRateCalculator
 	static double compoundMonthly(double balance, double interest, int year)
 	{
 		for (int counter=0; counter<year*12; counter++)
-			balance = (balance * (1 + interest/12));
+			balance *= (1 + interest/12);
 		return balance;
 	}
 	
@@ -112,7 +112,7 @@ public class InterestRateCalculator
 	static double compoundDaily(double balance, double interest, int year)
 	{
 		for (int counter=0; counter<year*365; counter++)
-			balance = (balance * (1 + interest/365));
+			balance *= (1 + interest/365);
 		return balance;
 	}
 }
