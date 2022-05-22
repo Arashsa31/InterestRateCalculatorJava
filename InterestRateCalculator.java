@@ -34,8 +34,7 @@ public class InterestRateCalculator
 	public static void main(String[] args) 
 	{
 		while (true)
-		{
-		
+		{		
 		//variables
 		double accountBalance, interestRate;
 		int year;
